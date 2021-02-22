@@ -5,5 +5,5 @@ import reactor.core.publisher.Mono;
 
 public interface ExchangeRateService {
 
-  Mono<ExchangeRateResponse> getRates();
+  Mono<ExchangeRateResponse> getRates(String currencyCode);
 }
