@@ -1,9 +1,12 @@
 package com.inteligo.exchangerate.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AccessLevel;
+import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+@RequiredArgsConstructor(access = AccessLevel.PRIVATE)
 public class Utils {
 
   private static final Logger logger = LoggerFactory.getLogger(Utils.class);

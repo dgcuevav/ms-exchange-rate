@@ -21,12 +21,11 @@ public class ExchangeRateMapper {
                         .rate(aDouble)
                         .build()));
 
-    ExchangeRateResponse response = ExchangeRateResponse.builder()
+    return ExchangeRateResponse.builder()
         .source(exchangeRate.getSource())
         .currencies(currencyList)
         .build();
 
-    return response;
   }
 
 }

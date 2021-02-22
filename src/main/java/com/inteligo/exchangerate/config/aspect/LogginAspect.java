@@ -1,6 +1,5 @@
 package com.inteligo.exchangerate.config.aspect;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.inteligo.exchangerate.util.Utils;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -21,11 +20,9 @@ public class LogginAspect {
   private static final Logger LOG = LoggerFactory.getLogger(LogginAspect.class);
 
   private final Environment env;
-  private ObjectMapper mapper;
 
-  public LogginAspect(Environment env, ObjectMapper mapper) {
+  public LogginAspect(Environment env) {
     this.env = env;
-    this.mapper = mapper;
   }
 
   //CONTROLLER LAYER ====================================================
