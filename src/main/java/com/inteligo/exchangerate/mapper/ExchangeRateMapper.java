@@ -17,7 +17,7 @@ public class ExchangeRateMapper {
     List<Currency> currencyList = new ArrayList<>();
     exchangeRate.getQuotes().forEach(
         (s, aDouble) -> currencyList.add(Currency.builder()
-                        .code(s)
+                        .code(s.substring(3))
                         .rate(aDouble)
                         .build()));
 
